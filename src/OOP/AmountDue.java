@@ -1,3 +1,5 @@
+package OOP;
+
 class AmountDue {
     static double tax = 0.12;
     static double total_due;

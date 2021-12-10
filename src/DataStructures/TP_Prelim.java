@@ -1,3 +1,5 @@
+package DataStructures;
+
 import java.util.LinkedList;
 
 public class TP_Prelim {

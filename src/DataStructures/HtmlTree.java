@@ -1,3 +1,5 @@
+package DataStructures;
+
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import java.util.Arrays;

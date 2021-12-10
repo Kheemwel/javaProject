@@ -1,3 +1,5 @@
+package OOP;
+
 class Faculty extends Employee {
     private boolean status;
 

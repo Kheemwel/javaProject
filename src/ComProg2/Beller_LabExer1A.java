@@ -1,3 +1,5 @@
+package ComProg2;
+
 public class Beller_LabExer1A {
     public static void main(String[] args) {
         int faveNumber = 8;

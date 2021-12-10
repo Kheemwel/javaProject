@@ -1,3 +1,5 @@
+package OOP;
+
 class Employee extends Person {
     private double salary;
     private String department;
