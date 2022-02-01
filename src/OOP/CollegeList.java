@@ -71,4 +71,76 @@ public class CollegeList {
                 System.out.println("Invalid Input!");
         }
     }
+
+}
+
+class Person {
+    private String name;
+    private String contactNum;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    public String getContactNum() {
+        return contactNum;
+    }
+
+    public void setContactNum(String c) {
+        contactNum = c;
+    }
+}
+
+class Employee extends Person {
+    private double salary;
+    private String department;
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double s) {
+        salary = s;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String d) {
+        department = d;
+    }
+}
+
+class Faculty extends Employee {
+    private boolean status;
+
+    public boolean isRegular() {
+        return status;
+    }
+}
+
+class Student extends Person {
+    private String program;
+    private int yearLevel;
+
+    public String getProgram() {
+        return program;
+    }
+
+    public void setProgram(String p) {
+        program = p;
+    }
+
+    public int getYearLevel() {
+        return yearLevel;
+    }
+
+    public void setYearLevel(int y) {
+        yearLevel = y;
+    }
 }

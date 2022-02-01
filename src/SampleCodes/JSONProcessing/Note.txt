@@ -1,0 +1,47 @@
+JSON-P
+Java API for JSON Processing (JSON-P) provides portable APIs to parse, generate, transform, and query JSON using object model and streaming APIs.
+There are two ways two work with JSON in JSON-P: streaming API and object model API.
+
+
+JSON-P Streaming API
+The streaming API hands over parsing and generation control to the programmer.
+The streaming API provides an event-based parser and allows an application developer to ask for the next event rather than handling the event in a callback.
+This is called a pull method.
+
+
+Name	        Description
+Json	        Contains static methods to create JSON parsers, generators, and their factories.
+JsonParser	    Represents an event-based parser reads JSON data from a stream.
+JsonGenerator	Writes JSON data to a stream one value at a time.
+
+
+JSON-P Object model API
+The object model API creates a tree-like structure that represents the JSON data in memory.
+The tree can be flexibly navigated and queried. On the other hand, the object model API is often less efficient as the streaming model and requires more memory.
+
+Name	            Description
+Json	            Contains static methods to create JSON parsers, generators, and their factories.
+JsonObjectBuilder	Creates an object model in memory by adding values from application code.
+JsonArrayBuilder	Creates an array model in memory by adding values from application code.
+JsonReader	        Reads a JsonObject or a JsonArray from an input source.
+JsonWriter	        Writes a JsonObject or a JsonArray to an output source.
+
+The JsonValue, JsonObject, JsonArray, JsonString, and JsonNumber are JSON data types.
+
+In our examples, we use JDK 11 and Maven to create our applications.
+
+<dependencies>
+    <dependency>
+        <groupId>javax.json</groupId>
+        <artifactId>javax.json-api</artifactId>
+        <version>1.1</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.json</artifactId>
+        <version>1.1</version>
+    </dependency>
+</dependencies>
+
+In the projects, we use javax.json-api and javax.json dependencies.
